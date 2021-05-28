@@ -22,6 +22,7 @@ body {
         font-family: Roboto, sans-serif;
         font-style: normal;
         font-weight: 700;
+        
             
 }
 /* Header */
@@ -34,14 +35,15 @@ body {
     text-decoration: none;
 
 }
-.logo >span {
+.logo >span, 
+.logo-footer >span {
     color: var(--accent-color);
+}
 
 /* Навигация */
 
   nav {
-    background: #FFFFFF;
-  }  
+    background: #FFFFFF;  
 }
 ul {
     list-style: none;
@@ -61,19 +63,32 @@ ul {
     color: var(--accent-color);
 }
 
-.button {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    cursor: pointer;
+.nav-list .link.current {
+    color: var(--accent-color);
+}
 
-    color: #757575;
+  .button-mail,
+  .button-tel {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+
+      color: #757575;
   }
- .button:hover,
- .button:focus {
+  
+ .button-mail:hover,
+ .button-mail:focus {
     color: var(--accent-color);
  }
+ .button-tel:hover,
+ .button-tel:focus {
+     color: var(--accent-color);
+ }
+
+ 
 
  /* Герой */
  .hero{ 
@@ -130,6 +145,7 @@ h2 {
 }
 
 .about-team {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
     /* text-align: center; */
@@ -139,12 +155,32 @@ h2 {
 }
 
 /* footer */
+.bcg-color {
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2097px;
+    background-color: #2F303A;
+    
+    
+}
+.logo-footer {
+    font-family: Raleway;
+    color: #000000;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 address {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 footer .link {
@@ -154,7 +190,7 @@ footer .link {
     line-height: 1.7;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    /* color: rgba(255, 255, 255, 0.6); */
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
 
